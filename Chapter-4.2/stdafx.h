@@ -24,14 +24,22 @@
 
 
 
+
+//宏定义处
+#define ElemType int
+
 // TODO:  在此处引用程序需要的其他头文件
 
 
 
 
 
-//树的节点的结构体定义
-
+//二叉树的链式存储结构体定义
+typedef struct BiTNode {
+	ElemType data;                 //数据域
+	struct BiTNode* lchild;   //左孩子结点指针
+	struct BiTNode* rchild;   //右孩子节点指针
+}BiTNode, *BiTree;
 
 
 
